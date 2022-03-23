@@ -41,3 +41,27 @@ The home page should:
 For your Course Assignment for this course, you will deliver a functional, responsive website of the prototype, but for now we’re just focusing on the home page. You can add other pages to your repository, but the focus will be on the home page.
 
 Certain aspects of your original design might not be possible without JavaScript, and you can either leave these off the HTML and CSS submission or use techniques (like the checkbox hack) to mimic the interactions. For example, you might have an add-to-cart interaction. This can be achieved using the checkbox hack like so: https://jsfiddle.net/MJPhillip/0a5vqk43/
+
+# Developer info
+
+## HTML
+
+1. Using header, main footer
+2. Add small comments along the way to explanation of the code.
+3. comments should not be longer then 2 line´s
+
+## CSS
+
+1. One CSS file.
+2. Using Flexbox.
+3. import external fonts (import! downloading font from google not link to safe if google font can go down).
+4. media Screen 362px, 768, 992px.
+
+## VSCODE Extensions
+
+1. live-server
+   Link: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+2. Prettier
+   Link: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+3. Color Highlight
+   Link: https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight
