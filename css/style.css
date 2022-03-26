@@ -1,5 +1,68 @@
-.main {
-  display: block;
-  height: ;
-  width: ;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../assets/font/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(../assets/font/Montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../assets/font/Montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../assets/font/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../assets/font/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../assets/font/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: Roboto-Blod;
+  src: url(../assets/font/Roboto/Roboto-Bold.ttf);
+}
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(254, 254, 254, 0.8),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(../assets/img/rd_1.jpg);
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+}
+.header_logo {
+  padding-top: 2rem;
+  height: 50vh;
+}
+.section__nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.navigation {
+}
+.nav__btn {
+  color: rgb(0, 0, 0);
+  padding: 2rem, auto;
+  background-color: rgb(3, 120, 166, 0.7);
+  font-family: Roboto-Regular;
 }
