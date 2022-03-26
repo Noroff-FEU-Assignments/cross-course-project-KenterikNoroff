@@ -35,34 +35,114 @@
   font-family: Roboto-Blod;
   src: url(../assets/font/Roboto/Roboto-Bold.ttf);
 }
+
+@media (min-width: 300px) and (max-width: 414px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header_logo {
+    height: 15vh;
+  }
+
+  #navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .product_img {
+    height: 5rem;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
 header {
   display: flex;
-  flex-wrap: nowrap;
+  height: 30vh;
+  align-items: center;
   justify-content: center;
   background: linear-gradient(
-      rgba(254, 254, 254, 0.8),
-      rgba(255, 255, 255, 0.4)
+      rgba(254, 254, 254, 0.9),
+      rgba(255, 255, 255, 0.6)
     ),
     url(../assets/img/rd_1.jpg);
   background-size: cover;
-  height: 60vh;
-  width: 100%;
 }
-.header_logo {
-  padding-top: 2rem;
-  height: 50vh;
-}
-.section__nav {
+
+.section__filter {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  margin: 1.2rem;
+}
+
+.nav__filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section__produck {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+
+  overflow-x: scroll;
 }
-.navigation {
-}
+
 .nav__btn {
+  background-color: #4698b8;
   color: rgb(0, 0, 0);
-  padding: 2rem, auto;
-  background-color: rgb(3, 120, 166, 0.7);
-  font-family: Roboto-Regular;
+  font-family: Montserrat-Bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 0.2rem 0.4rem;
+  border-radius: 0 0 0.3rem 0.3rem;
+  box-shadow: 0.1rem 0.2rem rgb(0, 0, 0, 0.2);
+}
+
+.nav__btn:hover,
+.nav__btn:active {
+  background-color: rgb(3 120, 166);
+  color: rgb(255, 255, 255);
+  box-shadow: 0.1rem 0.4rem rgb(0, 0, 0, 0.2);
+}
+
+#filter_btn {
+  height: 70px;
+  width: 60px;
+  text-align: center;
+  font-family: Montserrat-Bold;
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: #b4c8d9;
+  color: #0378a6;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 0.1rem 0.2rem rgb(3, 120, 166, 0.3);
+}
+
+#filter_btn:hover {
+  height: 80px;
+  width: 70px;
+  background-color: #0378a6;
+  color: white;
+}
+
+#filter_btn:active {
+  height: 70px;
+  width: 60px;
+  background-color: #0378a6;
+  color: white;
+}
+
+.footer_logo {
+  height: 14vh;
 }
