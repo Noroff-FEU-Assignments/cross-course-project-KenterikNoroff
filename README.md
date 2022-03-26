@@ -57,6 +57,22 @@ Certain aspects of your original design might not be possible without JavaScript
 3. import external fonts (import! downloading font from google not link to safe if google font can go down).
 4. media Screen 362px, 768, 992px.
 
+## font-family
+
+Am using font from google font, but am not link it to css http. am think if one day google font is down or connect problem to google font. so am downloading font in to asset and link it.
+
+i want to check ut if i can use link it from google but if google is down use download file, but think may need javascript on this. more resource most be done.
+
+font in use.
+
+Main font
+
+1. https://fonts.google.com/specimen/Montserrat#standard-styles
+
+Sub font
+
+2. https://fonts.google.com/specimen/Roboto
+
 ## VSCODE Extensions
 
 1. live-server
