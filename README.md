@@ -44,6 +44,10 @@ Certain aspects of your original design might not be possible without JavaScript
 
 # Developer info
 
+## Design 1
+
+since did not manage to finish the design then choose continue with mobile version not desktop version made the first time
+
 ## HTML
 
 1. Using header, main footer
