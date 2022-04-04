@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root selecter for making variable */
+:root {
+  /* Font family */
+
+  /* Font family heading */
+  --font-family-header: Montserrat-Bold;
+  /* Font family subheading */
+  --font-family-header-sub: Montserrat-Medium;
+  /* Font family Normal*/
+  --font-family-normal: Roboto-Regular;
+
+  /* Font size */
+
+  /* Font size smal */
+  --font-size-small: 1.2rem;
+  /* Font size medium */
+  --font-size-medium: 1.5rem;
+  /* Font size Large*/
+  --font-size-large: 2rem;
+
+  /* Colour palette */
+
+  /* Primary Color */
+  --color-Primary: rgb(180, 200, 217);
+  /* Secondary Color */
+  --color-secondary: rgb(3, 120, 166);
+  /* Tertiary Color */
+  --color-tertiary: rgb(251, 82, 60);
+  /* White Color */
+  --color-white: rgb(255, 255, 255);
+  /* Black Color */
+  --color-black: rgb(0, 0, 0);
+  /* Gray Color */
+  --color-gray: rgb(178, 178, 178);
+}
+
+/* import of font from assets */
+
+/* this is font using for heading & Subheading */
+/* Montserrat-Regular */
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../assets/font/Montserrat/static/Montserrat-Regular.ttf);
+}
+/* Montserrat-Medium */
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(../assets/font/Montserrat/static/Montserrat-Medium.ttf);
+}
+/* Montserrat-Bold */
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../assets/font/Montserrat/static/Montserrat-Bold.ttf);
+}
+/* this is font using for Normal and p */
+/* Roboto-Light */
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../assets/font/Roboto/Roboto-Light.ttf);
+}
+/* Roboto-Regular */
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../assets/font/Roboto/Roboto-Regular.ttf);
+}
+/* Roboto-Medium */
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../assets/font/Roboto/Roboto-Medium.ttf);
+}
+/* Roboto-Blod */
+@font-face {
+  font-family: Roboto-Blod;
+  src: url(../assets/font/Roboto/Roboto-Bold.ttf);
+}
