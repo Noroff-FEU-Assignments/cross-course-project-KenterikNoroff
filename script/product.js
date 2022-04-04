@@ -1,4 +1,7 @@
-// Product
+//This is variable for get HTML .Element.
+const rdProductul = document.querySelector(".product_body");
+
+// This is Array for Product information.
 let raindayProduct = {
   [1]: {
     productName: "Air HS",
@@ -154,4 +157,5 @@ let raindayProduct = {
   },
 };
 
+// This is for seeing if array work
 console.log(raindayProduct);
