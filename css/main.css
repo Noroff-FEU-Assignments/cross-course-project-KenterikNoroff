@@ -1,11 +1,3 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Root selecter for making variable */
 :root {
   /* Font family */
@@ -80,4 +72,92 @@
 @font-face {
   font-family: Roboto-Blod;
   src: url(../assets/font/Roboto/Roboto-Bold.ttf);
+}
+
+/* body */
+body {
+  display: grid;
+  grid-gap: 10px;
+  grid-template:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+}
+
+/* Removing underline from links */
+a,
+a::before,
+a::after {
+  text-decoration: none;
+}
+
+/*  header */
+header {
+  display: flex;
+  grid-area: header;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  background: linear-gradient(
+      rgba(254, 254, 254, 0.9),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(../assets/img/rd_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  background: var(--color-secondary);
+  grid-area: nav;
+  min-height: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  grid-area: main;
+}
+.rd_nav_filter {
+  min-height: 5rem;
+  background: chartreuse;
+}
+
+/* Rainday product section */
+.rd_product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  background: #fff;
+  min-height: 100px;
+}
+
+/* Product body  */
+.rd_product_body {
+  background: var(--color-Primary);
+  border: 0.3rem solid var(--color-secondary);
+  border-radius: 0.1rem;
+}
+
+/* Rainday product image */
+.rd_product_img {
+  height: 11vh;
+}
+
+/* Footer */
+footer {
+  background: var(--color-secondary);
+  grid-area: footer;
+  min-height: 10vh;
 }
