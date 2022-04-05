@@ -7,7 +7,7 @@ let productrd = [
     name: "Air HS",
     image: "./assets/img/rd_product_2.png",
     imageDescription: "Picture of a winter jacket and color of jacket is green",
-    newProduct: "No",
+    newProduct: false,
     description: "Durable and comfortable in wind, and watery",
     price: 2500,
     careaOfUse: "hiking",
@@ -24,7 +24,7 @@ let productrd = [
     name: "Air km",
     image: "./assets/img/rd_product_2.png",
     imageDescription: "Picture of a winter jacket and color of jacket is green",
-    newProduct: "No",
+    newProduct: false,
     price: 2500,
     careaOfUse: "hiking",
     sex: "female",
@@ -39,7 +39,7 @@ let productrd = [
     name: "Five HS",
     image: "./assets/img/rd_product_1.png",
     imageDescription: "Picture of a winter jacket and color of jacket is green",
-    newProduct: "No",
+    newProduct: false,
     description: "Durable and comfortable in wind, and watery",
     price: 4030,
     careaOfUse: "winter",
@@ -55,7 +55,7 @@ let productrd = [
     name: "Five JS",
     image: "./assets/img/rd_product_1.png",
     imageDescription: "Picture of a winter jacket and color of jacket is green",
-    newProduct: "No",
+    newProduct: false,
     description: "Durable and comfortable in wind, and watery",
     price: 3000,
     careaOfUse: "winter",
@@ -71,7 +71,7 @@ let productrd = [
     name: "Puffy Ls",
     image: "./assets/img/rd_product_3.png",
     imageDescription: "Picture of a winter jacket and color of jacket is green",
-    newProduct: "No",
+    newProduct: false,
     description: "Ski jacket in water wind-repellent material",
     price: 3000,
     careaOfUse: "skiing",
@@ -87,7 +87,7 @@ let productrd = [
     name: "Valdez Frost",
     image: "./assets/img/rd_product_4.png",
     imageDescription: "Picture of a winter jacket and color of jacket is green",
-    newProduct: "No",
+    newProduct: false,
     description: "Ski jacket in water wind-repellent material",
     price: 3000,
     careaOfUse: "hiking",
@@ -140,6 +140,17 @@ function productPage(productrd) {
                 ${result[i].price}
             <p>
           </div>
+        </div>
+      `;
+    } else
+      result[i].name != null &&
+        result[i].description != null &&
+        result[i].price != null &&
+        result[i].newProduct == true;
+    {
+      `
+        <div>
+
         </div>
       `;
     }
