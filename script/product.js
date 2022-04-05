@@ -1,161 +1,149 @@
 //This is variable for get HTML .Element.
-const rdProductul = document.querySelector(".product_body");
+const rdProductul = document.querySelector(".rd_product");
 
-// This is Array for Product information.
-let raindayProduct = {
-  [1]: {
-    productName: "Air HS",
-    image: "../assets/img/rd_product_2",
+// This is object contain info about Product.
+let productrd = [
+  {
+    name: "Air HS",
+    image: "./assets/img/rd_product_2.png",
+    imageDescription: "Picture of a winter jacket and color of jacket is green",
+    newProduct: "No",
     description: "Durable and comfortable in wind, and watery",
-    Price: 2000,
-    areaOfUse: "hiking",
+    price: 2500,
+    careaOfUse: "hiking",
     sex: "male",
-    Specifications: {
-      fit: "Normal",
-      AreaOfUse: "forest",
-      VentilationZipper: "Nei",
-      weight: "1500 G",
-    },
-    ProductDescription: {
-      [1]: "Durable and comfortable in wind, and watery",
-      [2]: "practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.",
-      [3]: "Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
-    },
+    productDescription:
+      "Durable and comfortable in wind, and watery.practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
+    fit: "Normal",
+    AreaOfUse: "forest",
+    VentilationZipper: "Yes",
+    weight: "4000 G",
   },
-  [2]: {
-    productName: "Air HS",
-    image: "../assets/img/rd_product_2",
-    description: "Durable and comfortable in wind, and watery",
-    Price: 2000,
-    areaOfUse: "hiking",
-    sex: "female",
-    Specifications: {
-      fit: "Normal",
-      AreaOfUse: "Forest",
-      VentilationZipper: "Nei",
-      weight: "1500 G",
-    },
-    ProductDescription: {
-      [1]: "Durable and comfortable in wind, and watery",
-      [2]: "practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.",
-      [3]: "Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
-    },
-  },
-  [3]: {
-    productName: "Five HS",
-    image: "../assets/img/rd_product_1",
-    description: "Durable and comfortable in wind, and watery",
-    Price: 2000,
-    areaOfUse: "winter",
-    sex: "male",
-    Specifications: {
-      fit: "Normal",
-      AreaOfUse: "Alpin",
-      VentilationZipper: "Yes",
-      weight: "2500 G",
-    },
-    ProductDescription: {
-      [1]: "Durable and comfortable in wind, and watery",
-      [2]: "practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.",
-      [3]: "Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
-    },
-  },
-  [4]: {
-    productName: "Five HS",
-    image: "../assets/img/rd_product_1",
-    description: "Warm versatile & comfortable ski jacket",
-    Price: 2000,
-    areaOfUse: "winter",
-    sex: "female",
-    Specifications: {
-      fit: "Normal",
-      AreaOfUse: "Aplin",
-      VentilationZipper: "Yes",
-      weight: "2500 G",
-    },
-    ProductDescription: {
-      [1]: "Durable and comfortable in wind, and watery",
-      [2]: "practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.",
-      [3]: "Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
-    },
-  },
-  [5]: {
-    productName: "Puffy Ls",
-    image: "../assets/img/rd_product_3",
-    description: "Ski jacket in water wind-repellent material",
-    Price: 2000,
-    areaOfUse: "skiing",
-    sex: "female",
-    Specifications: {
-      fit: "Normal",
-      AreaOfUse: "Mount",
-      VentilationZipper: "Nei",
-      weight: "2200 G",
-    },
-    ProductDescription: {
-      [1]: "Durable and comfortable in wind, and watery",
-      [2]: "practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.",
-      [3]: "Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
-    },
-  },
-  [6]: {
-    productName: "Puffy Ls",
-    image: "../assets/img/rd_product_3",
-    description: "Ski jacket in water wind-repellent material",
-    Price: 2000,
-    areaOfUse: "skiing",
-    sex: "female",
-    Specifications: {
-      fit: "Normal",
-      AreaOfUse: "Mount",
-      VentilationZipper: "Nei",
-      weight: "2200 G",
-    },
-    ProductDescription: {
-      [1]: "Durable and comfortable in wind, and watery",
-      [2]: "practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.",
-      [3]: "Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
-    },
-  },
-  [7]: {
-    productName: "Valdez Frost",
-    image: "../assets/img/rd_product_4",
-    description: "Ski jacket in water wind-repellent material",
-    Price: 2000,
-    areaOfUse: "hiking",
-    sex: "male",
-    Specifications: {
-      fit: "Normal",
-      AreaOfUse: "",
-      VentilationZipper: "Nei",
-      weight: "4000 G",
-    },
-    ProductDescription: {
-      [1]: "Durable and comfortable in wind, and watery",
-      [2]: "practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.",
-      [3]: "Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
-    },
-  },
-  [8]: {
-    productName: "Valdez Frost",
-    image: "../assets/img/rd_product_4",
-    description: "Ski jacket in water wind-repellent material",
-    Price: 2000,
+
+  {
+    name: "Air km",
+    image: "./assets/img/rd_product_2.png",
+    imageDescription: "Picture of a winter jacket and color of jacket is green",
+    newProduct: "No",
+    price: 2500,
     careaOfUse: "hiking",
     sex: "female",
-    Specifications: {
-      fit: "Normal",
-      AreaOfUse: "Alpin",
-      VentilationZipper: "Nei",
-      weight: "4000 G",
-    },
-    ProductDescription: {
-      [1]: "Durable and comfortable in wind, and watery",
-      [2]: "practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.",
-      [3]: "Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
-    },
+    productDescription:
+      "Durable and comfortable in wind, and watery.practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
+    fit: "Normal",
+    AreaOfUse: "forest",
+    VentilationZipper: "yes",
+    weight: "4000 G",
   },
-};
+  {
+    name: "Five HS",
+    image: "./assets/img/rd_product_1.png",
+    imageDescription: "Picture of a winter jacket and color of jacket is green",
+    newProduct: "No",
+    description: "Durable and comfortable in wind, and watery",
+    price: 4030,
+    careaOfUse: "winter",
+    sex: "male",
+    productDescription:
+      "Durable and comfortable in wind, and watery.practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
+    fit: "Normal",
+    AreaOfUse: "Alpin",
+    VentilationZipper: "Yes",
+    weight: "2500 G",
+  },
+  {
+    name: "Five JS",
+    image: "./assets/img/rd_product_1.png",
+    imageDescription: "Picture of a winter jacket and color of jacket is green",
+    newProduct: "No",
+    description: "Durable and comfortable in wind, and watery",
+    price: 3000,
+    careaOfUse: "winter",
+    sex: "female",
+    productDescription:
+      "Durable and comfortable in wind, and watery.practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
+    fit: "Normal",
+    AreaOfUse: "Alpin",
+    VentilationZipper: "Yes",
+    weight: "2500 G",
+  },
+  {
+    name: "Puffy Ls",
+    image: "./assets/img/rd_product_3.png",
+    imageDescription: "Picture of a winter jacket and color of jacket is green",
+    newProduct: "No",
+    description: "Ski jacket in water wind-repellent material",
+    price: 3000,
+    careaOfUse: "skiing",
+    sex: "female",
+    productDescription:
+      "Durable and comfortable in wind, and watery.practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
+    fit: "Normal",
+    AreaOfUse: "Mount",
+    VentilationZipper: "No",
+    weight: "2200 G",
+  },
+  {
+    name: "Valdez Frost",
+    image: "./assets/img/rd_product_4.png",
+    imageDescription: "Picture of a winter jacket and color of jacket is green",
+    newProduct: "No",
+    description: "Ski jacket in water wind-repellent material",
+    price: 3000,
+    careaOfUse: "hiking",
+    sex: "male",
+    productDescription:
+      "Durable and comfortable in wind, and watery.practical ventilation zippers under the sleeve for effective temperature control if desired. Five HS can also be easily compressed and takes up little space in the backpack on the go.Helmet-compatible hood with adjustment options provides extra with protection against weather and wind. Extra reinforced front pockets with water-repellent zipper for easy access.",
+    fit: "Normal",
+    AreaOfUse: "Alpin",
+    VentilationZipper: "No",
+    weight: "4000 G",
+  },
+];
 
-// This is for seeing if array work
-console.log(raindayProduct);
+// This is for testing of object is working
+//console.log(productrd);
+
+// function to loop through object and add to product page.
+function productPage(productrd) {
+  //new variable for object
+  let result = productrd;
+
+  //new test for object
+  //console.log(result);
+
+  for (let i = 0; i < result.length; i++) {
+    //testing after object going trough the loop
+    //console.log(result[i].name);
+    if (
+      result[i].name != null &&
+      result[i].description != null &&
+      result[i].price != null
+    ) {
+      rdProductul.innerHTML += `
+        <div class="rd_product_body">
+          <div class="rd_product_header">
+            <img 
+              src="${result[i].image}"
+              alt="${result[i].imageDescription}"
+              class="rd_product_img"
+          </div>
+          <div class="rd_product_main">
+            <h3>
+                ${result[i].name}
+            </h3>
+            <p>
+                ${result[i].description}
+            </p>
+            <p>
+            </p>
+                ${result[i].price}
+            <p>
+          </div>
+        </div>
+      `;
+    }
+  }
+}
+
+productPage(productrd);
