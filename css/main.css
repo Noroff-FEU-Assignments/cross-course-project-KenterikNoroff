@@ -81,7 +81,7 @@ body {
   grid-template:
     "header header"
     "nav nav"
-    "main aside"
+    "main main"
     "footer footer";
 }
 
@@ -113,7 +113,7 @@ header {
 /* Nav */
 nav {
   display: flex;
-  background: var(--color-secondary);
+  background: var(--color-Primary);
   grid-area: nav;
   min-height: 30px;
   justify-content: space-between;
@@ -145,6 +145,12 @@ main {
   gap: 3rem;
   background: #fff;
   min-height: 100px;
+  max-height: 700px;
+  overflow-y: scroll;
+}
+
+.rd_product::-webkit-scrollbar {
+  display: none;
 }
 
 /* Product body  */
@@ -168,5 +174,28 @@ footer {
 }
 
 nav {
-  grid-template-areas: ;
+  grid-template-areas: nav;
+}
+
+/* button */
+
+.btn {
+  color: white;
+}
+
+.btn__nav {
+  padding: 5px 14px;
+  background: var(--color-secondary);
+  color: var(--color-white);
+  border-radius: 0.2rem;
+  margin: 0.5rem;
+  font: var(--font-family-normal);
+  text-transform: uppercase;
+}
+
+.btn__nav:hover {
+  background: var(--color-Primary);
+  color: var(--color-black);
+  border: 0.2rem solid var(--color-Primary);
+  box-shadow: 0.2rem 0.3rem rgb(0, 0, 0, 0.4);
 }
