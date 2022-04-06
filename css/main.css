@@ -126,9 +126,12 @@ main {
   gap: 2rem;
   grid-area: main;
 }
+
 .rd_nav_filter {
+  display: flex;
   min-height: 5rem;
   background: chartreuse;
+  justify-content: center;
 }
 
 /* Rainday product section */
@@ -157,7 +160,12 @@ main {
 
 /* Footer */
 footer {
+  display: flex;
   background: var(--color-secondary);
   grid-area: footer;
   min-height: 10vh;
+}
+
+nav {
+  grid-template-areas: ;
 }
