@@ -96,6 +96,7 @@ a::after {
 header {
   display: flex;
   grid-area: header;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 30vh;
