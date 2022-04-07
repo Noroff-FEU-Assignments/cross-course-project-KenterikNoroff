@@ -40,37 +40,43 @@
         <!-- Using Span for divide 2 line and style it different -->
         <!-- Span heading Primary Main -->
         <span class="heading-primary-main"> Rainydays </span>
+        <br />
         <!-- Span heading Primary Sub -->
         <span class="heading-primary-sub"> Pushing the Comfort Zone </span>
       </h1>
     </header>
     <!-- navigation -->
-    <nav>
-      <ul>
-        <il>
-          <a href="#home" class="btn__nav"> home </a>
-        </il>
-        <il>
-          <a href="./about.html" class="btn__nav"> about us </a>
-        </il>
-        <il>
-          <a href="./contactus.html" class="btn__nav"> contact us </a>
-        </il>
-      </ul>
-      <ul>
-        <il>
-          <a href="" class="btn__nav"> login </a>
-        </il>
-        <il>
-          <a href="" class="btn__nav"> Register </a>
-        </il>
-        <il>
-          <a href="">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </a>
-        </il>
-      </ul>
-    </nav>
+    <div class="root_nav">
+      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul class="nav_ul">
+          <il>
+            <a href="#home" class="btn_nav active"> home </a>
+          </il>
+          <il>
+            <a href="./about.html" class="btn_nav"> about us </a>
+          </il>
+          <il>
+            <a href="./contactus.html" class="btn_nav"> contact us </a>
+          </il>
+        </ul>
+        <ul>
+          <il>
+            <a href="" class="btn_nav"> login </a>
+          </il>
+          <il>
+            <a href="" class="btn_nav"> Register </a>
+          </il>
+          <il>
+            <a href="">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </il>
+        </ul>
+      </nav>
+    </div>
+
     <!-- Main -->
     <main>
       <section class="rd_nav_filter">
