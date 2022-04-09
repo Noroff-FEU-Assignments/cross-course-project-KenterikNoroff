@@ -29,51 +29,38 @@
   <body>
     <!-- Header-->
     <header>
-      <!-- Image logo -->
-      <img
-        src="./assets/img/rd_small_logo.png"
-        alt="you are see a mount"
-        srcset=""
-      />
-      <!-- H1 link to heading Primary -->
-      <h1 class="heading-primary">
-        <!-- Using Span for divide 2 line and style it different -->
-        <!-- Span heading Primary Main -->
-        <span class="heading-primary-main"> Rainydays </span>
-        <br />
-        <!-- Span heading Primary Sub -->
-        <span class="heading-primary-sub"> Pushing the Comfort Zone </span>
-      </h1>
+      <div class="header_container">
+        <!-- Image logo -->
+        <img
+          src="./assets/img/rd_small_logo.png"
+          alt="you are see a mount"
+          class="header_logo_image"
+        />
+        <!-- H1 link to heading Primary -->
+        <h1 class="heading-primary">
+          <!-- Using Span for divide 2 line and style it different -->
+          <!-- Span heading Primary Main -->
+          <span class="heading-primary-main"> Rainydays </span>
+          <br />
+          <!-- Span heading Primary Sub -->
+          <span class="heading-primary-sub"> Pushing the Comfort Zone </span>
+        </h1>
+      </div>
     </header>
     <!-- navigation -->
     <div class="root_nav">
-      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <label for="hamburger-menu"><i class="fas fa-bars icon_menu"></i></label>
       <input type="checkbox" id="hamburger-menu" />
       <nav>
-        <ul class="nav_ul">
-          <il>
-            <a href="#home" class="btn_nav active"> home </a>
-          </il>
-          <il>
-            <a href="./about.html" class="btn_nav"> about us </a>
-          </il>
-          <il>
-            <a href="./contactus.html" class="btn_nav"> contact us </a>
-          </il>
-        </ul>
-        <ul>
-          <il>
-            <a href="" class="btn_nav"> login </a>
-          </il>
-          <il>
-            <a href="" class="btn_nav"> Register </a>
-          </il>
-          <il>
-            <a href="">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-          </il>
-        </ul>
+        <div class="nav_container">
+          <a href="./index.html">home</a>
+          <a href="./about.html">about us</a>
+          <a href="./contactus.html" class="">contact us</a>
+        </div>
+        <div class="nav_container">
+          <a href="#">Login</a>
+          <a href="#">register</a>
+        </div>
       </nav>
     </div>
 
@@ -81,43 +68,57 @@
     <main>
       <section class="rd_nav_filter">
         <h2>Category</h2>
-        <ul class="nav__filter">
-          <il class="">
-            <button id="filter_btn">
-              <i class="fa-solid fa-snowflake filter_icon"></i>
-              <br />
-              winter <br />
-              jackets
-            </button>
-          </il>
-          <il>
-            <button id="filter_btn">
-              <i class="fa-solid fa-person-skiing filter_icon"></i>
-              <br />
-              skiing<br />
-              jackets
-            </button>
-          </il>
-          <il>
-            <button id="filter_btn">
-              <i class="fa-solid fa-person-hiking filter_icon"></i>
-              <br />
-              hiking<br />
-              jackets
-            </button>
-          </il>
-          <il class="">
-            <button id="filter_btn">
-              <i class="fa-solid fa-snowflake filter_icon"></i>
-              <br />
-              winter <br />
-              jackets
-            </button>
-          </il>
-        </ul>
+        <div class="rd:_nav__filter">
+          <button id="btn__filter">
+            <i class="fa-solid fa-venus filter_icon"></i>
+            <br />
+            women<br />
+            jackets
+          </button>
+          <button id="btn__filter">
+            <i class="fa-solid fa-mars filter_icon"></i>
+            <br />
+            man <br />
+            jackets
+          </button>
+          <button id="btn__filter">
+            <i class="fa-solid fa-person-hiking filter_icon"></i>
+            <br />
+            hiking<br />
+            jackets
+          </button>
+          <button id="btn__filter">
+            <i class="fa-solid fa-person-skiing filter_icon"></i>
+            <br />
+            skiing<br />
+            jackets
+          </button>
+          <button id="btn__filter">
+            <i class="fa-solid fa-person-hiking filter_icon"></i>
+            <br />
+            hiking<br />
+            jackets
+          </button>
+          <button id="btn__filter">
+            <i class="fa-solid fa-snowflake filter_icon"></i>
+            <br />
+            winter <br />
+            jackets
+          </button>
+        </div>
       </section>
       <section class="rd_new_product"></section>
       <section class="rd_product"></section>
+      <section class="section_cart">
+        <div class="cart__body">
+          <div class="cart_item">
+            <p id="cart_item_amount">0</p>
+          </div>
+          <div class="cart_price">
+            <p id="cart_price_amount">Kr 000,-</p>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer>
@@ -136,9 +137,7 @@
         </ul>
       </div>
       <!-- footer section for logo -->
-      <div class="footer_logo">
-        <img src="./assets/img/rd_logo.png" class="footer_logo" alt="" />
-      </div>
+      <div class="footer_logo"></div>
       <!-- footer section for shipping -->
       <div class="footer_shipping">
         <h4>Shipping</h4>
@@ -154,5 +153,6 @@
       </div>
     </footer>
     <script src="./script/product.js"></script>
+    <div></div>
   </body>
 </html>

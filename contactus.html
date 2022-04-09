@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Header -->
+  <head>
+    <!-- Meta Data-->
+    <!-- Default encoding for HTML5 UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Can be use simulate an HTTP header Response -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Meta for helping on scaling html document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta for description on content on page -->
+    <meta name="description" content="" />
+    <!-- Meta For Keywords use to google SAO and search -->
+    <meta name="keywords" content="" />
+    <!-- Meta for author who create page -->
+    <meta name="author" content="Kent Erik Hole" />
+    <!-- Link html file to CSS file-->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Import icon from  Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/f0adc224b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Title for page -->
+    <title>RainyDays | Home</title>
+  </head>
+  <!-- Body -->
+  <body>
+    <!-- Header-->
+    <header>
+      <div class="header_container">
+        <!-- Image logo -->
+        <img
+          src="./assets/img/rd_small_logo.png"
+          alt="you are see a mount"
+          class="header_logo_image"
+        />
+        <!-- H1 link to heading Primary -->
+        <h1 class="heading-primary">
+          <!-- Using Span for divide 2 line and style it different -->
+          <!-- Span heading Primary Main -->
+          <span class="heading-primary-main"> Rainydays </span>
+          <br />
+          <!-- Span heading Primary Sub -->
+          <span class="heading-primary-sub"> contact us </span>
+        </h1>
+      </div>
+    </header>
+    <!-- navigation -->
+    <div class="root_nav">
+      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <div class="nav_container">
+          <a href="./index.html">home</a>
+          <a href="./about.html">about us</a>
+          <a href="./contactus.html" class="">contact us</a>
+        </div>
+        <div class="nav_container">
+          <a href="#">Login</a>
+          <a href="#">register</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Main -->
+    <main>
+      <section class="contactus">
+        <h2>Contact US</h2>
+        <img src="./assets/img/rd_9.jpg" class="contactus_img" alt="" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          provident fuga quos cum sint eum, sapiente quibusdam et rem? Molestias
+          quaerat doloribus rem nesciunt assumenda laborum, repellendus quod
+          quam fugiat.
+        </p>
+        <form action="" class="contactus_form">
+          <label for="fname"></label>
+          <input
+            type="text"
+            id="name"
+            name="fname"
+            value=""
+            placeholder="Name"
+          />
+          <label for="email"></label>
+          <input type="email" id="email" value="" placeholder="E-Mail" />
+          <label for="messege"></label>
+          <input
+            type="text"
+            id="messege"
+            name="messege"
+            placeholder="message"
+          />
+          <input type="submit" value="send" />
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <!-- footer section for payment -->
+      <div class="footer_payment">
+        <h4>Payment</h4>
+        <ul class="footer_payment_list">
+          <il>
+            <a href="#"><i class="fa-brands fa-cc-visa footer_icon"></i></a>
+          </il>
+          <il>
+            <a href="#"
+              ><i class="fa-brands fa-cc-mastercard footer_icon"></i
+            ></a>
+          </il>
+        </ul>
+      </div>
+      <!-- footer section for logo -->
+      <div class="footer_logo"></div>
+      <!-- footer section for shipping -->
+      <div class="footer_shipping">
+        <h4>Shipping</h4>
+        <ul class="footer_shipping_list">
+          <il>
+            <a href="#"> <i class="fa-brands fa-ups footer_icon"></i> </a>
+          </il>
+          <il>
+            <a href="#"> <i class="fa-brands fa-fedex footer_icon"></i></a>
+          </il>
+          <il></il>
+        </ul>
+      </div>
+    </footer>
+    <script src="./script/product.js"></script>
+    <div></div>
+  </body>
+</html>

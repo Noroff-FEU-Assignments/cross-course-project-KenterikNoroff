@@ -7,6 +7,7 @@ let productrd = [
     name: "Air HS",
     image: "./assets/img/rd_product_2.png",
     imageDescription: "Picture of a winter jacket and color of jacket is green",
+    http: "./airhs.html",
     newProduct: false,
     description: "Durable and comfortable in wind, and watery",
     price: 2500,
@@ -267,25 +268,16 @@ function productPage(productrd) {
       result[i].price != null
     ) {
       rdProductul.innerHTML += `
-        <div class="rd_product_body">
-          <div class="rd_product_header">
+        <div class="rd_product_container" onclick="location.href=´${result[i].http}´">
+          <div class="rd_container_header">
             <img 
               src="${result[i].image}"
               alt="${result[i].imageDescription}"
               class="rd_product_img"
           </div>
-          <div class="rd_product_main">
-            <h3>
-                ${result[i].name}
-            </h3>
-            <p>
-                ${result[i].description}
-            </p>
-            <p>
-            </p>
-                ${result[i].price}
-            <p>
-          </div>
+          <div>
+            <h3> test test</h3>
+          </div>W
         </div>
       `;
     } else

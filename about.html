@@ -16,21 +16,135 @@
     <!-- Meta for author who create page -->
     <meta name="author" content="Kent Erik Hole" />
     <!-- Link html file to CSS file-->
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <!-- Import icon from  Fontawesome -->
     <script
       src="https://kit.fontawesome.com/f0adc224b5.js"
       crossorigin="anonymous"
     ></script>
     <!-- Title for page -->
-    <title>RainyDays | About Us</title>
+    <title>RainyDays | About us</title>
   </head>
   <!-- Body -->
   <body>
     <!-- Header-->
-    <header></header>
+    <header>
+      <div class="header_container">
+        <!-- Image logo -->
+        <img
+          src="./assets/img/rd_small_logo.png"
+          alt="you are see a mount"
+          class="header_logo_image"
+        />
+        <!-- H1 link to heading Primary -->
+        <h1 class="heading-primary">
+          <!-- Using Span for divide 2 line and style it different -->
+          <!-- Span heading Primary Main -->
+          <span class="heading-primary-main"> Rainydays </span>
+          <br />
+          <!-- Span heading Primary Sub -->
+          <span class="heading-primary-sub"> About US </span>
+        </h1>
+      </div>
+    </header>
+    <!-- navigation -->
+    <div class="root_nav">
+      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <div class="nav_container">
+          <a href="./index.html" class="btn_nav">home</a>
+          <a href="./about.html" class="btn_nav active">about us</a>
+          <a href="./contactus.html" class="btn_nav">contact us</a>
+        </div>
+        <div class="nav_container">
+          <a href="#" class="btn_nav">Login</a>
+          <a href="#" class="btn_nav">register</a>
+        </div>
+      </nav>
+    </div>
+
     <!-- Main -->
-    <main></main>
+    <main>
+      <section class="aboutus">
+        <h2 class="header_page about_text_header">About US</h2>
+
+        <p class="page_text about_text_p1">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Necessitatibus minima dolorum consequuntur dolor hic tempore amet
+          assumenda laborum quas, voluptatem dignissimos molestiae
+          exercitationem magnam sequi qui impedit minus, ratione voluptas?
+        </p>
+        <h3 class="header_page__sub about_text_header-sub">Our vision</h3>
+        <p class="page_text about_text_header">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab fugiat ea
+          qui minima, delectus laborum, voluptate hic officiis incidunt aperiam
+          amet commodi minus enim nostrum, tenetur sequi earum sunt a?
+        </p>
+        <br />
+        <p class="page_text about_text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui soluta
+          excepturi nesciunt non atque aliquid illo ipsam sed impedit
+          repudiandae deserunt blanditiis commodi illum eaque sapiente, quae
+          facilis! Debitis, ex!
+        </p>
+        <div class="aboutus_section__image">
+          <img
+            src="./assets/img/rd_5.jpg"
+            alt="one sits by his bike looking at mountains"
+            class="aboutus_img"
+          />
+          <img
+            src="./assets/img/rd_6.jpg"
+            alt=" person jumping on a road"
+            class="aboutus_img"
+          />
+          <img
+            src="./assets/img/rd_7.jpg"
+            alt="several tents on the mountainside"
+            class="aboutus_img"
+          />
+          <img
+            src="./assets/img/rd_8.jpg"
+            alt="2 person waking on mounts"
+            class="aboutus_img"
+          />
+        </div>
+      </section>
+    </main>
     <!-- Footer -->
+    <footer>
+      <div class="footer_container">
+        <h3 class="footer_text">payment</h3>
+        <ul class="footer_ul">
+          <il>
+            <a href="#">
+              <i class="fa-brands fa-cc-visa footer_icon"></i>
+            </a>
+          </il>
+          <il>
+            <a href="#">
+              <i class="fa-brands fa-cc-mastercard footer_icon"></i>
+            </a>
+          </il>
+        </ul>
+      </div>
+      <div class="footer_container">
+        <h3 class="footer_text">contact</h3>
+        <ul>
+          <il> email: post@rainydays.com </il>
+          <il> </il>
+        </ul>
+      </div>
+      <div class="footer_container">
+        <h3 class="footer_text">shipping</h3>
+        <ul>
+          <il></il>
+          <il></il>
+        </ul>
+      </div>
+    </footer>
+    <script src="./script/product.js"></script>
+    <div></div>
   </body>
 </html>
