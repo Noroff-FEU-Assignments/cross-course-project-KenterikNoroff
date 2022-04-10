@@ -268,16 +268,29 @@ function productPage(productrd) {
       result[i].price != null
     ) {
       rdProductul.innerHTML += `
-        <div class="rd_product_container" onclick="location.href=´${result[i].http}´">
-          <div class="rd_container_header">
+        <div class="show_product_container" onclick="location.href='../product/airhs.html'">
+          <div class="show_product_header">
             <img 
               src="${result[i].image}"
               alt="${result[i].imageDescription}"
-              class="rd_product_img"
+              class="img_show_product"
           </div>
-          <div>
-            <h3> test test</h3>
-          </div>W
+          <div class=""show_product_main>
+            <h3 class="header_page_showproduct">
+              ${result[i].name}
+            </h3>
+            <p class="page_text">
+              ${result[i].description}
+            </p>
+            <p class="show_product_price">
+              ${result[i].price}
+            <p>
+          </div>
+          <div class=""show_product_footer>
+          <button  class="btn_product" onclick="location.href='../product/airhs.html'">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </button>
+          </div>
         </div>
       `;
     } else
