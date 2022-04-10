@@ -162,16 +162,38 @@ nav {
   gap: 0.5rem;
   overflow-x: scroll;
 }
-
 .rd_product {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.show_product_container {
+  display: flex;
   gap: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
+.show_product_header {
+  display: grid;
+  grid-area: spheader;
+  padding: 1rem;
+  justify-items: center;
+  background: var(--color-primary);
+  border-radius: 0.4rem;
+  color: var(--color-white);
+}
+.show_product_main {
+  display: grid;
+  grid-area: spmain;
+}
+
+.show_product_footer {
+  display: grid;
+  grid-area: spfooter;
+}
 .rd_product_container {
   display: flex;
   justify-content: center;
@@ -397,7 +419,7 @@ nav {
   margin-top: 1rem;
 }
 
-.section_cart {
+.item_cart {
   display: none;
 }
 
@@ -474,6 +496,13 @@ footer {
   border-radius: 0.2rem;
 }
 
+.btn_product {
+  background: var(--color-secondart-dark);
+  color: var(--color-white);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+
 .heading-primary {
   font-size: clamp(1.8em, 5rem + 6vh, 1em);
   color: coral;
@@ -501,6 +530,14 @@ footer {
   color: var(--color-primary);
 }
 
+.header_page_showproduct {
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-large);
+  line-height: 3rem;
+  text-align: center;
+  color: var(--color-white);
+}
+
 .header_page__sub {
   font-family: var(--font-family-header);
   font-size: var(--font-size-medium);
@@ -524,6 +561,13 @@ footer {
   font-family: var(--font-family-header);
   font-size: var(--font-size-medium);
   color: var(--color-secondart-dark);
+}
+
+.show_product_price {
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-medium);
+  color: var(--color-secondart-dark);
+  text-align: center;
 }
 #cart_header .footer_text {
   font-family: var(--font-family-normal);
@@ -558,6 +602,13 @@ footer {
 
 .img_ordercomplett {
   width: 6em;
+}
+
+.img_show_product {
+  width: 6em;
+  padding: 10px 15px;
+  background: var(--color-white);
+  border-radius: 0.4rem;
 }
 
 /* Media Query */
@@ -613,13 +664,13 @@ footer {
     gap: 1rem;
   }
 
-  .section_cart {
+  .section_item {
     display: block;
     bottom: 5%;
     left: 25%;
     position: fixed;
   }
-  .cart__body {
+  .item__body {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -628,7 +679,7 @@ footer {
     border-radius: 0.4rem;
     gap: 1rem;
   }
-  .cart_item {
+  .item_item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -638,18 +689,18 @@ footer {
     color: var(--color-white);
     border-radius: 0.3rem;
   }
-  #cart_item_amount {
+  #item_item_amount {
     font-family: Montserrat-Bold;
     font-size: 1.2rem;
   }
 
-  .cart_price {
+  .item_price {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  #cart_price_amount {
+  #item_price_amount {
     font-family: Montserrat-Bold;
     font-size: 1.2rem;
     color: var(--color-white);
