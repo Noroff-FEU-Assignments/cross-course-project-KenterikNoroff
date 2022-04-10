@@ -6,7 +6,6 @@
 }
 
 /* link style */
-
 a,
 a::before,
 a::after {
@@ -14,6 +13,7 @@ a::after {
 }
 
 /* Root selecter for making variable */
+
 :root {
   /* Font family */
 
