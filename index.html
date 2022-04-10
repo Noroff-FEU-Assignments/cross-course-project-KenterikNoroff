@@ -1,306 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Header -->
   <head>
-    <!-- Meta -->
+    <!-- Meta Data-->
+    <!-- Default encoding for HTML5 UTF-8 -->
     <meta charset="UTF-8" />
+    <!-- Can be use simulate an HTTP header Response -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Meta for helping on scaling html document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <!-- Meta for description on content on page -->
+    <meta name="description" content="RainyDays home" />
+    <!-- Meta For Keywords use to google SAO and search -->
+    <meta name="keywords" content="Jackets, outdoors, price" />
+    <!-- Meta for author who create page -->
     <meta name="author" content="Kent Erik Hole" />
-    <!-- CSS fil -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- import! icon -->
+    <!-- Link html file to CSS file-->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Import icon from  Fontawesome -->
     <script
       src="https://kit.fontawesome.com/f0adc224b5.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Title page -->
-    <title>Rainydays</title>
+    <!-- Title for page -->
+    <title>RainyDays | Home</title>
   </head>
+  <!-- Body -->
   <body>
-    <!-- header -->
+    <!-- Header-->
     <header>
-      <img
-        src="./assets/img/rd_logo.png"
-        class="header_logo"
-        alt="Picture of logo of rainydays"
-      />
+      <div class="header_container">
+        <!-- Image logo -->
+        <img
+          src="./assets/img/rd_small_logo.png"
+          alt="you are see a mount"
+          class="header_logo_image"
+        />
+        <!-- H1 link to heading Primary -->
+        <h1 class="heading-primary">
+          <!-- Using Span for divide 2 line and style it different -->
+          <!-- Span heading Primary Main -->
+          <span class="heading-primary-main"> Rainydays </span>
+          <br />
+          <!-- Span heading Primary Sub -->
+          <span class="heading-primary-sub"> Pushing the Comfort Zone </span>
+        </h1>
+      </div>
     </header>
-    <main>
-      <nav id="navigation">
-        <a href="./index.html" class="nav__btn active" active>Home </a>
-
-        <a href="#" class="nav__btn">About Us</a>
-
-        <a href="#" class="nav__btn">contact us</a>
+    <!-- navigation -->
+    <div class="root_nav">
+      <label for="hamburger-menu"><i class="fas fa-bars icon_menu"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <div class="nav_container">
+          <a href="./index.html" class="btn_nav">home </a>
+          <a href="./about.html" class="btn_nav">about us</a>
+          <a href="./contactus.html" class="btn_nav">contact us</a>
+        </div>
+        <div class="nav_container">
+          <a href="#" class="btn_nav">Login</a>
+          <a href="#" class="btn_nav">register</a>
+        </div>
       </nav>
-      <!-- filter navigation -->
-      <section class="section__filter">
+    </div>
+
+    <!-- Main -->
+    <main>
+      <section class="nav__filter">
         <h2>Category</h2>
-        <ul class="nav__filter">
-          <il class="">
-            <button id="filter_btn">
-              <i class="fa-solid fa-snowflake filter_icon"></i>
+        <div class="nav__filter_containter">
+          <div class="nav__filter_containter__btn">
+            <button id="btn__filter">
+              <i class="fa-solid fa-venus filter_icon"></i>
               <br />
-              winter <br />
+              women<br />
               jackets
             </button>
-          </il>
-          <il>
-            <button id="filter_btn">
-              <i class="fa-solid fa-person-skiing filter_icon"></i>
+            <button id="btn__filter">
+              <i class="fa-solid fa-mars filter_icon"></i>
               <br />
-              skiing<br />
+              man <br />
               jackets
             </button>
-          </il>
-          <il>
-            <button id="filter_btn">
+            <button id="btn__filter">
               <i class="fa-solid fa-person-hiking filter_icon"></i>
               <br />
               hiking<br />
               jackets
             </button>
-          </il>
-          <il class="">
-            <button id="filter_btn">
+            <button id="btn__filter">
+              <i class="fa-solid fa-person-skiing filter_icon"></i>
+              <br />
+              skiing<br />
+              jackets
+            </button>
+            <button id="btn__filter">
+              <i class="fa-solid fa-person-hiking filter_icon"></i>
+              <br />
+              hiking<br />
+              jackets
+            </button>
+            <button id="btn__filter">
               <i class="fa-solid fa-snowflake filter_icon"></i>
               <br />
               winter <br />
               jackets
             </button>
-          </il>
-        </ul>
-      </section>
-      <!-- produck section -->
-      <section class="section__produck">
-        <!-- Product item one -->
-        <div class="product_body">
-          <div class="product_container">
-            <img
-              src="./assets/img/rd_product_1.png"
-              alt="Picture of a winter jacket and color of jacket is green"
-              class="product_img"
-            />
-          </div>
-          <div class="product_container_text">
-            <h3>winter jacket</h3>
-            <p id="product_info">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <p id="product_price">500</p>
-          </div>
-          <div class="product_container_buy">
-            <button id="product_btn">
-              <i class="fa-solid fa-basket-shopping"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Product item two -->
-        <div class="product_body">
-          <div class="product_container">
-            <img
-              src="./assets/img/rd_product_1.png"
-              alt="Picture of a winter jacket and color of jacket is green"
-              class="product_img"
-            />
-          </div>
-          <div class="product_container_text">
-            <h3>winter jacket</h3>
-            <p id="product_info">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <p id="product_price">500</p>
-          </div>
-          <div class="product_container_buy">
-            <button id="product_btn">
-              <i class="fa-solid fa-basket-shopping"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Product item three -->
-        <div class="product_body">
-          <div class="product_container">
-            <img
-              src="./assets/img/rd_product_1.png"
-              alt="Picture of a winter jacket and color of jacket is green"
-              class="product_img"
-            />
-          </div>
-          <div class="product_container_text">
-            <h3>winter jacket</h3>
-            <p id="product_info">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <p id="product_price">500</p>
-          </div>
-          <div class="product_container_buy">
-            <button id="product_btn">
-              <i class="fa-solid fa-basket-shopping"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Product item four -->
-        <div class="product_body">
-          <div class="product_container">
-            <img
-              src="./assets/img/rd_product_1.png"
-              alt="Picture of a winter jacket and color of jacket is green"
-              class="product_img"
-            />
-          </div>
-          <div class="product_container_text">
-            <h3>winter jacket</h3>
-            <p id="product_info">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <p id="product_price">500</p>
-          </div>
-          <div class="product_container_buy">
-            <button id="product_btn">
-              <i class="fa-solid fa-basket-shopping"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Product item five -->
-        <div class="product_body">
-          <div class="product_container">
-            <img
-              src="./assets/img/rd_product_1.png"
-              alt="Picture of a winter jacket and color of jacket is green"
-              class="product_img"
-            />
-          </div>
-          <div class="product_container_text">
-            <h3>winter jacket</h3>
-            <p id="product_info">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <p id="product_price">500</p>
-          </div>
-          <div class="product_container_buy">
-            <button id="product_btn">
-              <i class="fa-solid fa-basket-shopping"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Product item six -->
-        <div class="product_body">
-          <div class="product_container">
-            <img
-              src="./assets/img/rd_product_1.png"
-              alt="Picture of a winter jacket and color of jacket is green"
-              class="product_img"
-            />
-          </div>
-          <div class="product_container_text">
-            <h3>winter jacket</h3>
-            <p id="product_info">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <p id="product_price">500</p>
-          </div>
-          <div class="product_container_buy">
-            <button id="product_btn">
-              <i class="fa-solid fa-basket-shopping"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Product item seven -->
-        <div class="product_body">
-          <div class="product_container">
-            <img
-              src="./assets/img/rd_product_1.png"
-              alt="Picture of a winter jacket and color of jacket is green"
-              class="product_img"
-            />
-          </div>
-          <div class="product_container_text">
-            <h3>winter jacket</h3>
-            <p id="product_info">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <p id="product_price">500</p>
-          </div>
-          <div class="product_container_buy">
-            <button id="product_btn">
-              <i class="fa-solid fa-basket-shopping"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Product item eight -->
-        <div class="product_body">
-          <div class="product_container">
-            <img
-              src="./assets/img/rd_product_1.png"
-              alt="Picture of a winter jacket and color of jacket is green"
-              class="product_img"
-            />
-          </div>
-          <div class="product_container_text">
-            <h3>winter jacket</h3>
-            <p id="product_info">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <p id="product_price">500</p>
-          </div>
-          <div class="product_container_buy">
-            <button id="product_btn">
-              <i class="fa-solid fa-basket-shopping"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Product item nine -->
-        <div class="product_body">
-          <div class="product_container">
-            <img
-              src="./assets/img/rd_product_1.png"
-              alt="Picture of a winter jacket and color of jacket is green"
-              class="product_img"
-            />
-          </div>
-          <div class="product_container_text">
-            <h3>winter jacket</h3>
-            <p id="product_info">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <p id="product_price">500</p>
-          </div>
-          <div class="product_container_buy">
-            <button id="product_btn">
-              <i class="fa-solid fa-basket-shopping"></i>
-            </button>
           </div>
         </div>
       </section>
-      <!-- cart section -->
-      <section class="section_cart">
-        <div class="cart__body">
-          <div class="cart_item">
-            <p id="cart_item_amount">0</p>
+      <section class="rd_new_product"></section>
+      <section class="rd_product"></section>
+      <section class="section_item" onclick="location.href='cart.html'">
+        <div class="item__body">
+          <div class="item_item">
+            <p id="item_item_amount">0</p>
           </div>
-          <div class="cart_price">
-            <p id="cart_price_amount">Kr 000,-</p>
+          <div class="item_price">
+            <p id="item_price_amount">Kr 000,-</p>
           </div>
         </div>
       </section>
     </main>
-    <!-- footer section-->
+    <!-- Footer -->
     <footer>
       <!-- footer section for payment -->
       <div class="footer_payment">
-        <h4>Payment</h4>
-        <ul class="footer_payment_list">
+        <h4 class="header_footer">Payment</h4>
+        <ul class="footer_ul">
           <il>
             <a href="#"><i class="fa-brands fa-cc-visa footer_icon"></i></a>
           </il>
@@ -311,13 +138,9 @@
           </il>
         </ul>
       </div>
-      <!-- footer section for logo -->
-      <div class="footer_logo">
-        <img src="./assets/img/rd_logo.png" class="footer_logo" alt="" />
-      </div>
       <!-- footer section for shipping -->
       <div class="footer_shipping">
-        <h4>Shipping</h4>
+        <h4 class="header_footer">Shipping</h4>
         <ul class="footer_shipping_list">
           <il>
             <a href="#"> <i class="fa-brands fa-ups footer_icon"></i> </a>
@@ -325,9 +148,10 @@
           <il>
             <a href="#"> <i class="fa-brands fa-fedex footer_icon"></i></a>
           </il>
-          <il></il>
         </ul>
       </div>
     </footer>
+    <script src="./script/product.js"></script>
+    <div></div>
   </body>
 </html>
