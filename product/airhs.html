@@ -1,15 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Header -->
   <head>
+    <!-- Meta Data-->
+    <!-- Default encoding for HTML5 UTF-8 -->
     <meta charset="UTF-8" />
+    <!-- Can be use simulate an HTTP header Response -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Meta for helping on scaling html document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Meta for description on content on page -->
+    <meta name="description" content="" />
+    <!-- Meta For Keywords use to google SAO and search -->
+    <meta name="keywords" content="" />
+    <!-- Meta for author who create page -->
+    <meta name="author" content="Kent Erik Hole" />
+    <!-- Link html file to CSS file-->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Import icon from  Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/f0adc224b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Title for page -->
+    <title>RainyDays | About us</title>
   </head>
+  <!-- Body -->
   <body>
-    <header></header>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
+    <!-- Header-->
+    <header>
+      <div class="header_container">
+        <!-- Image logo -->
+        <img
+          src="../assets/img/rd_small_logo.png"
+          alt="you are see a mount"
+          class="header_logo_image"
+        />
+        <!-- H1 link to heading Primary -->
+        <h1 class="heading-primary">
+          <!-- Using Span for divide 2 line and style it different -->
+          <!-- Span heading Primary Main -->
+          <span class="heading-primary-main"> Rainydays </span>
+          <br />
+          <!-- Span heading Primary Sub -->
+          <span class="heading-primary-sub" id)="product_item">
+            product name
+          </span>
+        </h1>
+      </div>
+    </header>
+    <!-- navigation -->
+    <div class="root_nav">
+      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <div class="nav_container">
+          <a href="./index.html" class="btn_nav">home</a>
+          <a href="./about.html" class="btn_nav">about us</a>
+          <a href="./contactus.html" class="btn_nav">contact us</a>
+        </div>
+        <div class="nav_container">
+          <a href="#" class="btn_nav">Login</a>
+          <a href="#" class="btn_nav">register</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Main -->
+    <main>
+      <section id="product_container">
+        <div id="product_header">
+          <h2 class="header_page">Product Name</h2>
+          <div>
+            <img
+              src="../assets/img/rd_product_1.png"
+              alt="dsfsdfsdf"
+              class="product_img"
+            />
+          </div>
+        </div>
+        <div id="product_main">
+          <h3 class="header_page__sub">price</h3>
+          <ul class="product_ul_price">
+            <il class="page_text_price"> 4060,- </il>
+            <il>
+              <a href="#" class="btn_cart"> Buy </a>
+            </il>
+          </ul>
+        </div>
+        <div id="product_aside">
+          <h3 class="header_page__sub">Specific</h3>
+          <ul class="product_ul page_text">
+            <il>Fit: Normal</il>
+            <il>UseAre: forest</il>
+            <il>ventilationZipper: Yes</il>
+            <il>weight: 4000 G</il>
+          </ul>
+        </div>
+        <div id="product_footer">
+          <h3 class="header_page__sub">Description:</h3>
+          <p class="page_text">
+            Durable and comfortable in wind, and watery.practical ventilation
+            zippers under the sleeve for effective temperature control if
+            desired. Five HS can also be easily compressed and takes up little
+            space in the backpack on the go.Helmet-compatible hood with
+            adjustment options provides extra with protection against weather
+            and wind. Extra reinforced front pockets with water-repellent zipper
+            for easy access.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer_container">
+        <h3 class="footer_text">payment</h3>
+        <ul class="footer_ul">
+          <il>
+            <a href="#">
+              <i class="fa-brands fa-cc-visa footer_icon"></i>
+            </a>
+          </il>
+          <il>
+            <a href="#">
+              <i class="fa-brands fa-cc-mastercard footer_icon"></i>
+            </a>
+          </il>
+        </ul>
+      </div>
+      <div class="footer_container">
+        <h3 class="footer_text">contact</h3>
+        <ul>
+          <il> email: post@rainydays.com </il>
+          <il> </il>
+        </ul>
+      </div>
+      <div class="footer_container">
+        <h3 class="footer_text">shipping</h3>
+        <ul>
+          <il></il>
+          <il></il>
+        </ul>
+      </div>
+    </footer>
+    <script src="./script/product.js"></script>
+    <div></div>
   </body>
 </html>
