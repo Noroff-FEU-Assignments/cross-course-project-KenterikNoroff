@@ -443,8 +443,9 @@ footer {
   grid-area: footer;
 }
 
-.footer_logo_img {
-  min-width: 1em;
+.footer_ul {
+  display: inline-flex;
+  gap: 1.5rem;
 }
 
 /* Button for rainday´s */
@@ -570,6 +571,14 @@ footer {
   font-size: var(--font-size-medium);
   color: var(--color-primary);
   line-height: 3rem;
+}
+
+.header_footer {
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-small);
+  line-height: 1.5rem;
+  text-align: center;
+  color: coral;
 }
 
 .page_text {
